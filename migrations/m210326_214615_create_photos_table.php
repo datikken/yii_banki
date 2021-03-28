@@ -14,6 +14,9 @@ class m210326_214615_create_photos_table extends Migration
     {
         $this->createTable('{{%photos}}', [
             'id' => $this->primaryKey(),
+            'name' => $this->string(),
+            'created_at' => $this->dateTime(),
+            'updated_at' => $this->dateTime()
         ]);
     }
 
